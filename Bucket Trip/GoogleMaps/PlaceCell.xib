@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="PlaceCell" customClass="PlaceCell" customModule="Translovato" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="526" height="66"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufo-Yu-WfG">
+                    <rect key="frame" x="10" y="10" width="506" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mgy-iC-9vC">
+                    <rect key="frame" x="10" y="35" width="506" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ufo-Yu-WfG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="7S9-V7-RtA"/>
+                <constraint firstItem="ufo-Yu-WfG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="GNa-0i-R1i"/>
+                <constraint firstAttribute="bottom" secondItem="Mgy-iC-9vC" secondAttribute="bottom" constant="10" id="GVB-bx-pHY"/>
+                <constraint firstItem="Mgy-iC-9vC" firstAttribute="leading" secondItem="ufo-Yu-WfG" secondAttribute="leading" id="aZj-JH-xam"/>
+                <constraint firstAttribute="trailing" secondItem="ufo-Yu-WfG" secondAttribute="trailing" constant="10" id="klh-lA-qth"/>
+                <constraint firstItem="Mgy-iC-9vC" firstAttribute="top" secondItem="ufo-Yu-WfG" secondAttribute="bottom" constant="4" id="qTK-be-m0l"/>
+                <constraint firstItem="Mgy-iC-9vC" firstAttribute="trailing" secondItem="ufo-Yu-WfG" secondAttribute="trailing" id="xmw-zT-Bqw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="Mgy-iC-9vC" id="vBd-rF-xIJ"/>
+                <outlet property="nameLabel" destination="ufo-Yu-WfG" id="M10-dR-zjR"/>
+            </connections>
+            <point key="canvasLocation" x="449" y="-15"/>
+        </view>
+    </objects>
+</document>

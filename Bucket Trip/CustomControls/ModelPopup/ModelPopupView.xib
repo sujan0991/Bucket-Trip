@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="ModelPopupView" customClass="ModelPopupView" customModule="Rseed" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="370"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iGw-ha-Qd6">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="370"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qyc-Uf-BRw">
+                            <rect key="frame" x="0.0" y="0.0" width="300" height="370"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="qyc-Uf-BRw" secondAttribute="bottom" id="JUE-hR-0U3"/>
+                        <constraint firstItem="qyc-Uf-BRw" firstAttribute="top" secondItem="iGw-ha-Qd6" secondAttribute="top" id="OsJ-lT-9CY"/>
+                        <constraint firstItem="qyc-Uf-BRw" firstAttribute="centerX" secondItem="iGw-ha-Qd6" secondAttribute="centerX" id="bOD-de-DVl"/>
+                        <constraint firstItem="qyc-Uf-BRw" firstAttribute="centerY" secondItem="iGw-ha-Qd6" secondAttribute="centerY" id="w3i-cc-5Q4"/>
+                        <constraint firstItem="qyc-Uf-BRw" firstAttribute="leading" secondItem="iGw-ha-Qd6" secondAttribute="leading" id="x87-8f-w7l"/>
+                        <constraint firstAttribute="trailing" secondItem="qyc-Uf-BRw" secondAttribute="trailing" id="xn9-B3-TOs"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iGw-ha-Qd6" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DsA-Qs-aJH"/>
+                <constraint firstItem="iGw-ha-Qd6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KAq-1a-gUW"/>
+                <constraint firstAttribute="bottom" secondItem="iGw-ha-Qd6" secondAttribute="bottom" id="UvG-cf-DfD"/>
+                <constraint firstAttribute="trailing" secondItem="iGw-ha-Qd6" secondAttribute="trailing" id="dtp-1W-X8x"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tableView" destination="qyc-Uf-BRw" id="iHj-RR-eWj"/>
+            </connections>
+            <point key="canvasLocation" x="-24" y="-611"/>
+        </view>
+    </objects>
+</document>

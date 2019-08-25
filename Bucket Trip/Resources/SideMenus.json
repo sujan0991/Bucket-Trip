@@ -1,0 +1,75 @@
+[
+ {
+ "id": 1,
+ "title": "Home",
+ "icon": "home",
+ "icon_width":28,
+ "icon_height":28
+ },
+ {
+ "id": 2,
+ "title": "Pending Tasks",
+ "icon": "pending",
+ "icon_width":28,
+ "icon_height":28
+ },
+ {
+ "id": 3,
+ "title": "Accepted Tasks",
+ "icon": "pending",
+ "icon_width":28,
+ "icon_height":28
+ },
+ {
+ "id": 4,
+ "title": "Friends",
+ "icon": "friends",
+ "icon_width":28,
+ "icon_height":28
+ },
+ {
+ "id": 5,
+ "title": "Trip and Location",
+ "icon": "location",
+ "icon_width":28,
+ "icon_height":28
+ },
+ {
+ "id": 6,
+ "title": "Trip Invitations",
+ "icon": "invitation",
+ "icon_width":28,
+ "icon_height":28
+ }
+ ,
+ {
+ "id": 7,
+ "title": "Passport and Travel",
+ "icon": "passport",
+ "icon_width":28,
+ "icon_height":28
+ }
+ ,
+ {
+ "id": 8,
+ "title": "Profile",
+ "icon": "profile",
+ "icon_width":28,
+ "icon_height":28
+ },
+ {
+ "id": 9,
+ "title": "Blog",
+ "icon": "blog",
+ "icon_width":28,
+ "icon_height":28
+ }
+ ,
+ {
+ "id": 10,
+ "title": "Logout",
+ "icon": "logout",
+ "icon_width":28,
+ "icon_height":28
+ }
+ ]

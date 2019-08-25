@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-Regular.ttf">
+            <string>Nunito-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuTableCell" rowHeight="62" id="KGk-i7-Jjw" userLabel="MenuTableCell" customClass="MenuTableCell" customModule="Bucket_Trip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="38"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="37.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blog" translatesAutoresizingMaskIntoConstraints="NO" id="Qsy-SB-RCW">
+                        <rect key="frame" x="20" y="13" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="wPr-MQ-Pme"/>
+                            <constraint firstAttribute="width" constant="12" id="zSw-GF-6bp"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dk1-gG-FGk">
+                        <rect key="frame" x="38" y="8" width="49.5" height="21.5"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" name="Nunito-Regular" family="Nunito" pointSize="18"/>
+                        <color key="textColor" red="0.62745098039215685" green="0.62745098039215685" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="46G-9V-p7s">
+                        <rect key="frame" x="20" y="36.5" width="200" height="1"/>
+                        <color key="backgroundColor" red="0.8901960784313725" green="0.8901960784313725" blue="0.8901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="9Zp-kp-r3F"/>
+                            <constraint firstAttribute="height" constant="1" id="xS1-8V-wOs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="46G-9V-p7s" secondAttribute="trailing" constant="20" id="23v-mz-CZN"/>
+                    <constraint firstItem="Qsy-SB-RCW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="47M-rR-o54"/>
+                    <constraint firstAttribute="bottom" secondItem="Dk1-gG-FGk" secondAttribute="bottom" constant="8" id="4Is-OF-cKA"/>
+                    <constraint firstItem="46G-9V-p7s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Mdv-vD-dR5"/>
+                    <constraint firstItem="Dk1-gG-FGk" firstAttribute="leading" secondItem="Qsy-SB-RCW" secondAttribute="trailing" constant="6" id="RMf-pB-eYw"/>
+                    <constraint firstAttribute="trailing" secondItem="Dk1-gG-FGk" secondAttribute="trailing" constant="30" id="fP8-ne-Hn5"/>
+                    <constraint firstAttribute="bottom" secondItem="46G-9V-p7s" secondAttribute="bottom" id="hb1-fs-ixZ"/>
+                    <constraint firstItem="Dk1-gG-FGk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="od2-dU-hcp"/>
+                    <constraint firstItem="Qsy-SB-RCW" firstAttribute="centerY" secondItem="Dk1-gG-FGk" secondAttribute="centerY" id="uVy-JW-1ie"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="menuImageView" destination="Qsy-SB-RCW" id="QYf-Ab-l8v"/>
+                <outlet property="menuLabel" destination="Dk1-gG-FGk" id="RKF-jJ-ahK"/>
+                <outlet property="seperatorView" destination="46G-9V-p7s" id="BZz-Be-3Om"/>
+            </connections>
+            <point key="canvasLocation" x="62.5" y="187"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="blog" width="12" height="12"/>
+    </resources>
+</document>
